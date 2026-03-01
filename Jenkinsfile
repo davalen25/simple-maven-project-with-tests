@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'sleep 1000'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
